@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content" android:layout_height="wrap_content"
+
+	android:id="@+id/tabBarLinearLayout" android:orientation="vertical">
+	
+	<TextView android:text="Houstan, Texas" android:id="@+id/tabBarCurentLocationTextView"
+	android:layout_width="fill_parent" android:textSize="12dip"
+	android:paddingLeft="5dip" android:textColor="#000"
+	android:layout_height="wrap_content" android:background="#fff"></TextView>
+	
+	<LinearLayout android:id="@+id/LinearLayout01" 
+ 		android:layout_width="wrap_content" 
+ 		android:layout_height="wrap_content">
+	
+		<Button android:background="@drawable/home_unclick" android:id="@+id/tabBarHomeButton"
+			android:layout_width="80dip" android:layout_height="wrap_content"></Button>
+		<Button android:background="@drawable/mytrips_unclick"
+			android:id="@+id/tabBarMyTripsButton" android:layout_width="wrap_content"
+			android:layout_height="wrap_content"></Button>
+		
+		<Button android:background="@drawable/rules_uncheck" android:id="@+id/tabBarRulesButton"
+
+			android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+			
+
+		<Button android:background="@drawable/settings1_unclicked" android:id="@+id/tabBarSettingsButton"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+	 
+	 </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,38 @@
+{ "configurations": [ {
+               "TSN" : [ {
+                    "configcode": "TSN",
+                    "Label": "Trip Start Name",
+                    "value" : "1"
+                   } ] ,
+		"TST": [ {
+                    "configcode": "TST",
+                    "Label": "Trip Stop time",
+                    "value" : "1"
+               }],
+              "DEMAIL": [{
+                    "configcode": "DEMAIL",
+                    "Label": "Disable Email",
+                    "value" : "1"
+                }],
+               "DCALL": [{
+                    "configcode": "DCALL",
+                    "Label": "Disable Call",
+                    "value" : "1"
+                }],
+                "DTTEXTING": [{
+                    "configcode": "DTEXTING",
+                    "Label": "Disable Texting",
+                    "value" : "1"
+                }],
+                "DWEB": [{
+                    "configcode": "DWEB",
+                    "Label": "Disable Web",
+                    "value" : "1"
+                }],
+                "LOGWEBPOINTS": [{
+                    "configcode": "LOGWEBPOINTS",
+                    "Label": "Log waypoints",
+                    "value" : "1"
+               }]
+    } ]
+ }

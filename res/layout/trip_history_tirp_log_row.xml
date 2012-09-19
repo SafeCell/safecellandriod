@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:background="#FFF"
+  >
+  
+  
+<ImageView android:id="@+id/TripHistoryTripLogRowImageView" 
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content"
+	android:src="@android:drawable/btn_star_big_on"
+	android:layout_gravity="center_vertical"
+	android:layout_margin="10dip"
+	></ImageView>
+
+<TextView android:text="Trip Log" 
+	android:id="@+id/TripHistoryTripLogRowTripLogTextView" 
+	android:textColor="#000"
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content"
+	android:layout_gravity="center_vertical"
+	android:layout_weight="1"
+	android:paddingLeft="20dip"
+	></TextView>
+
+<LinearLayout 
+	android:layout_width="60dip" 		
+	android:layout_height="40dip"
+	android:orientation="vertical"
+	android:id="@+id/TripHistoryTripLogRowPointsBackground"
+	android:background="@android:drawable/editbox_background"
+	android:layout_marginRight="10dip"
+	android:gravity="center"
+	android:layout_gravity="center_vertical"
+	>	
+<TextView android:text="1" 
+	android:id="@+id/TripHistoryTripLogRowPoints1TextView" 
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content"
+	android:textColor="#000"	
+	/>
+	
+<TextView android:text="Points" 
+
+	android:id="@+id/TripHistoryTripLogRowPointsTextView"
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content"
+	android:textColor="#000"
+	android:textSize="9sp"	
+	/>
+	
+	</LinearLayout>
+</LinearLayout>

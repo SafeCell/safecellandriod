@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical" android:background="#000">
+
+	<ImageView android:id="@+id/ImageView01"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:layout_gravity="center" android:background="@drawable/logo_patch"
+		android:layout_alignParentTop="true"></ImageView>
+
+	<TextView android:text="Autoresponder" android:id="@+id/TextView01"
+		android:background="@drawable/header_background" android:textColor="#fff"
+		android:textStyle="bold" android:gravity="left|center_vertical"
+		android:paddingLeft="5dip" android:layout_width="wrap_content"
+		android:layout_below="@+id/ImageView01" android:layout_height="wrap_content"
+		android:phoneNumber="false"></TextView>
+
+	<TextView android:id="@+id/SmsPhoneToggleTextView"
+		android:layout_below="@+id/TextView01" android:layout_alignBaseline="@+id/SmsPhoneAutoreplyCheckBox"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:text="Auto reply" android:textColor="#fff" android:textSize="20dip" 
+		android:layout_marginLeft="8dip"/>
+	
+	
+	<CheckBox android:id="@+id/SmsPhoneAutoreplyCheckBox"
+		android:layout_below="@+id/TextView01" android:layout_alignParentRight="true"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:layout_marginRight="8dip"
+		></CheckBox>
+	
+	<TextView
+		android:text="If turned on, automatic SMS replies will be send to your callers and texters while a trip is in progress."
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:id="@+id/SmsPhoneDescTextView"
+		android:layout_below="@+id/SmsPhoneAutoreplyCheckBox" 
+		android:layout_alignRight="@+id/SmsPhoneAutoreplyCheckBox"
+		android:layout_marginLeft="8dip"
+		/>
+
+	<include layout="@layout/tab_bar_layout" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+
+
+</RelativeLayout>

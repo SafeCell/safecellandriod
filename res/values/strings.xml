@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, HomeScreenActivity!</string>
+    <string name="app_name">SafeCell</string>
+<string name="accountVerificationAccountCodeInformation">You can obtain this code from the &quot;Add/Delete Account Devices&quot; Section under the &quot;Settings&quot; Tab of the Safecell App on your other phone. </string>
+<string name="game_play">You can control gameplay settings.If you would like to participate in Safecell game make sure that the settings are on.</string>
+
+<string name="settingsGamePlayString">Gameplay Settings &amp; Score</string>
+
+<string name="notification_sound">If you want audio notification about school
+zones and driving rules during your trips,
+leave this on.</string>
+<string name="secondary_rules_string">You can be issued a ticket but only in combination of other moving violation of a speeding law.</string>
+<string name="crash_collection_rules_string">In the event of a collision law enforcement has the right to collect cellphone usage data in order to determine whether cellphone was in use at the time of crash.</string>
+<string name="gps_backgroundString">GPS &amp; Backgrounding</string>
+<string name="trackingservice">Tracking Service</string>
+<string name="safe_cell">Safe Cell</string>
+</resources>

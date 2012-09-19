@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="wrap_content"
+	android:orientation="vertical" android:gravity="center_horizontal"
+	android:padding="10dip" android:id="@+id/layout_root">
+
+
+
+	<Button android:text="Existing Profile" android:id="@+id/ExistingProfileButton"
+		android:layout_width="150dip" android:layout_height="wrap_content" 
+		/>
+	<Button android:text="New Profile" android:id="@+id/NewProfileButton"
+		android:layout_width="150dip" android:layout_height="wrap_content"
+		 />
+	<Button android:text="Cancel" android:id="@+id/CancelButton"
+		android:layout_width="150dip" android:layout_height="wrap_content"
+		/>
+
+
+</LinearLayout>

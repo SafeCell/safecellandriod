@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<ImageView android:id="@+id/ImageView01"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:layout_gravity="center" android:background="@drawable/logo_patch"></ImageView>
+		
+		<TextView android:text="@string/gps_backgroundString" android:id="@+id/TextView01"
+		android:background="@drawable/header_background" android:textColor="#fff"
+		android:textStyle="bold" android:gravity="left|center_vertical"
+		android:paddingLeft="5dip" android:layout_width="wrap_content"
+		android:layout_height="wrap_content"></TextView>
+
+	<RelativeLayout android:id="@+id/RelativeLayout01" android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dip"
+		android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+		
+		<TextView android:id="@+id/TextView01" android:gravity="center"
+			android:layout_height="wrap_content" android:layout_width="wrap_content"
+			android:textSize="15dp" android:text="GPS Data Provider"
+			android:textStyle="bold" android:textColor="#FFFFFF"
+			android:layout_marginTop="10dp" ></TextView>
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="data"
+			android:layout_marginLeft="160dp" android:layout_marginTop="10dp"
+			android:textStyle="bold" android:textSize="15dp" android:id="@+id/gpsDataTextView"></TextView>
+
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_marginLeft="10dp"
+			android:text="For accurate results you should use GPS Satellite data."
+			android:id="@+id/noteTextView" android:layout_marginTop="10dp"
+			android:layout_below="@+id/TextView01"></TextView>
+		<TextView android:text="GPS signal" android:id="@+id/TextView02"
+			android:textStyle="bold" android:textSize="15dp" android:textColor="#FFFFFF"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			 android:layout_below="@+id/noteTextView"
+			android:layout_marginTop="15dp"></TextView>
+			
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_below="@+id/TextView02"
+			android:text="PDOP" android:textColor="#FFFFFF" android:textSize="15dp"
+			android:layout_marginLeft="10dp" android:id="@+id/pdopTextView"
+			android:layout_marginTop="10dp"></TextView>
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_below="@+id/pdopTextView"
+			android:text="HDOP" android:textSize="15dp" android:textColor="#FFFFFF"
+			android:layout_marginLeft="10dp" android:id="@+id/hdopTextView"
+			android:layout_marginTop="10dp"></TextView>
+			
+			<TextView
+				android:text="Values less than or equal to 5% may yield unexpected results."
+				android:id="@+id/TextView03" android:layout_width="wrap_content" 
+				android:layout_below="@+id/hdopTextView"
+				android:layout_height="wrap_content" android:layout_marginTop="10dp"
+				android:layout_marginRight="10dp"></TextView>
+				<TableLayout android:id="@+id/TableLayout01"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:stretchColumns="0"  android:layout_below="@+id/TextView03">
+
+			<TableRow android:id="@+id/TableRow01" android:layout_width="wrap_content"
+				android:layout_height="wrap_content">
+				<LinearLayout android:orientation="vertical"
+					android:layout_gravity="center_vertical" android:layout_width="wrap_content"
+					android:layout_height="wrap_content">
+					<TextView android:id="@+id/TripToggleTextView"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:textStyle="bold"
+						android:text="Start Trips in Background" android:textColor="#fff"
+						android:textSize="15dip" />
+						</LinearLayout>
+
+				<CheckBox android:id="@+id/TripCheckBox"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"></CheckBox>
+
+			
+</TableRow>
+		</TableLayout>
+		
+		<TextView android:text="Autorips are always disabled if you are not using GPS" 
+			android:id="@+id/signalActivityAutoTripsDisableTextView" android:layout_width="wrap_content"
+			android:paddingBottom="10dp"
+			android:layout_below="@+id/TableLayout01"
+		 	android:layout_height="wrap_content" android:visibility="visible"></TextView>
+	</RelativeLayout>
+
+	
+		
+		
+		<include layout="@layout/tab_bar_layout" android:layout_width="wrap_content"
+		android:layout_height="wrap_content"/>
+</LinearLayout>
